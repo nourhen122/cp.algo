@@ -1,0 +1,25 @@
+ALGORITHM ckp1
+VAR
+    i : INTEGER
+    ch : STRING
+    vowels , characters : INTEGER : =0
+    words : INTEGER : =1
+BEGIN
+read (ch)
+characters := ch.length
+FOR i FROM 0 TO ch.length-1 step 1 DO
+    IF (ch[i]=' ') THEN
+     words:words=+1
+       
+    ELSE
+      IF (ch[i]='a'OR ch[i]='A'OR ch[i]='e'OR ch[i]='E' ...) THEN
+         vowels := vowels +1
+      END_IF
+    END_IF   
+    END_IF
+
+END_FOR
+   write('the nb of characters',characters)
+   write('the nb of words',words)
+   write('the nb of vowels',vowels)
+END
